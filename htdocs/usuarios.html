@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Links do bootstrap para css e JS -->
+    <link rel="stylesheet" href="./vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="./vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js" defer></script>
+    <script type="text/javascript" src="./vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" defer></script>
+
+    <!-- Link para o css e o JS normal-->
+    <link rel="stylesheet" href="/css/estilos_dev.css">
+    <script type="text/javascript" src="/js/scripts_dev.js" defer></script>
+</head>
+<body>
+    <main class="container-fluid p-4"> 
+    <!-- Usar 100% da largura CONTAINER FLUID -  Bootstrap-->
+
+        <h2 class="text-center p-3">Cadastro de Usuários</h2> 
+        <!-- Text center -- Centralizar o Texto - Bootstrap --> 
+        <!-- p-0 a 5  Padding Espaçamento entre a margem e o seu texto-->
+        <!-- px-0 a 5 padding horizontal--> <!-- py-0 a 5 Padding Superior--> <!-- pt - 0 a 5 Padding Superior --> <!-- Pb - 0 a 5 Padding inferior-->
+        <!-- m-0 a 5 e todos os outros do padding = Margin -->
+        <!-- mx-auto = Centralizar QUALQUER COISA sem ser texto no eixo X --> 
+        <!-- my-auto = Centralizar QUALQUER COISA sem ser o texto no eixo Y-->
+        <form action="" method="POST" class="d-flex flex-column"> 
+        <!-- Displays No Flex Box -->
+        <!-- d-flex d-block d-inline-block = FlexBox no bootstrap -->
+        <!-- d-flex = FLEX-ROW UM DO LADO DO OUTRO -->
+        <!-- flex -->
+        <!-- flex-colum = Um elemento em baixo do outro ||||| flex-row = Um elemento do lado do outro -->
+            
+            <figure class="col-6 mx-auto my-2"> 
+                <!-- col- (1 a 12) = Defina o tamanho da imagem  -->
+                <img src="./imagens/user.png" alt="Foto">
+            </figure>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nome" placeholder="Coloque seu nome Completo" name="nome">
+                <label for="floatingInput">Nome Completo</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="sobrenome" placeholder="Coloque seu sobrenome" name="sobrenome">
+                <label for="floatingInput">Sobrenome</label>
+            </div>
+
+            <!-- DEIXANDO DOIS PEQUENOS UM DO LADO DO OUTRO -- CRIE UMA NOVA DIV SEPARADA  E DETERMINE O D-FLEX FLEX-ROW-->
+            <div class="col-12 d-flex flex-row">
+                <div class="form-floating mb-3 col-6 me-2" >
+                    <input type="date" class="form-control" id="data" placeholder="Data de Nascimento" name="data">
+                    <label for="floatingInput">Data de Nascimento</label>
+                </div>
+    
+                <div class="form-floating mb-3 col-6 me-2 " style="width: 165px;">
+                    <input type="text" class="form-control" id="cpf" placeholder="Coloque seu cpf" name="cpf">
+                    <label for="floatingInput">CPF</label>
+                </div>
+            </div>
+            
+            
+            
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="cep" name="cep" placeholder="Informe o CEP">
+                <label for="floatingInput">CEP</label>
+            </div>
+
+
+            <div class="form-floating mb-3 col-12">
+                <input type="text" class="form-control" id="endereco" placeholder="Coloque seu endereco" name="endereco">
+                <label for="floatingInput">Seu endereço</label>
+            </div>
+
+            <div class="col-12 d-flex flex-row">
+                <div class="form-floating mb-3 col-6 me-2" >
+                    <input type="text" class="form-control" id="numero" placeholder="numero" name="numero">
+                    <label for="floatingInput">Número</label>
+                </div>
+    
+                <div class="form-floating mb-3 col-6 me-2 " style="width: 165px;">
+                    <input type="text" class="form-control" id="cpf" placeholder="Coloque seu cpf" name="cpf">
+                    <label for="floatingInput">CPF</label>
+                </div>
+            </div>
+            
+        </form>
+    </main>
+    
+    
+</body>
+</html>
